@@ -17,20 +17,19 @@ To this: https://issuu.com/ponsonbynews/docs/ponsonbynewsmar2015
 Notes
 ========
 
-1.   The program is not 100% perfect because Google parameters can look like authentic parameters. YMMV. See testcases file
-2.   The program was developed using thousands of GC URLs found on Wikipedia and manually verified.
-3.   The function was written in Nim and converted to a GNU Awk for portability.
-4.   The program is self contained requiring only /usr/bin/awk to run
+1.   The program is not 100% perfect because Google parameters can look like authentic parameters. YMMV but accuracy is high. See the testcases file
+2.   The program was developed with thousands of GC URLs found on Wikipedia and manually verified.
+3.   The function was written in Nim and converted to GNU awk for portability.
+4.   The program is self contained requiring only awk to run
 
 Dependencies 
 ========
-* GNU Awk 4.1 or higher
+* GNU awk 4.1 or higher
 
 Installation
 ========
 
-1. Clone
-	git clone https://github.com/greencardamom/Googcacheparse
+1. git clone https://github.com/greencardamom/Googcacheparse
 
 2. chmod 750 googcacheparse.awk
 
@@ -39,7 +38,7 @@ Installation
 Running
 ========
 
-./googcacheparse <url>
+./googcacheparse url
 
 
 Testcases
