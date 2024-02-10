@@ -10,9 +10,11 @@ Info
 ========
 This program converts a Google Cache URL to its original source URL.
 
-For example convert this: https://webcache.googleusercontent.com/search?q=cache:sHD-ZAEu5_8J:https://issuu.com/ponsonbynews/docs/ponsonbynewsmar2015+&cd=1&hl=en&ct=clnk&gl
+For example convert: https://webcache.googleusercontent.com/search?q=cache:cRnEZl-vyEkJ:https://www.allsaints-online.co.uk/+&cd=3&hl=en&ct=clnk&gl=uk
 
-To this: https://issuu.com/ponsonbynews/docs/ponsonbynewsmar2015
+To: https://www.allsaints-online.co.uk/ 
+
+It works by removing Google Cache URL data from the start and end of the URL.
 
 Notes
 ========
