@@ -44,4 +44,4 @@ Running
 Testcases
 ========
 
-The file testcases.txt is about 1,000 lines with " ---- " as a field break. Field 1 is the original Google Cache URL and Field 2 is the result of googcacheparse.awk
+The file testcases.txt is about 3,300 lines with " ---- " as the field break. Field 1 is the original Google Cache URL, and Field 2 is the result of googcacheparse.awk

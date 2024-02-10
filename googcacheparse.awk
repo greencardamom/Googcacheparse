@@ -125,11 +125,31 @@ function googcacheTail(res,  dd,ores,sss) {
     res = subs(dd[0], "", res)
   if(match(res, "&-find[^$]*[$]*", dd))
     res = subs(dd[0], "", res)
+  if(match(res, "[+]site:[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
+  if(match(res, "&client=[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
+  if(match(res, "&oe=[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
+  if(match(res, "&strip=[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
+  if(match(res, "&num=[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
+  if(match(res, "&rlz=[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
+  if(match(res, "&vwsrc=[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
+  if(match(res, "&lr=[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
+  if(match(res, "&sca_esv=[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
 
   if(match(res, "%20$"))
     sub("%20$", "", res)
   if(match(res, "[+]$"))
     sub("[+]$", "", res)
+  if(match(res, "[&]$"))
+    sub("[&]$", "", res)
 
   if(match(res, "html[+][^$]*[$]*" , dd)) {
     res = subs(dd[0], "", res)
@@ -170,6 +190,9 @@ function googcacheTail(res,  dd,ores,sss) {
       res = subs(sss, "", res)
     }
   }
+
+  if(match(res, "&ct=clnk[^$]*[$]*", dd))
+    res = subs(dd[0], "", res)
 
   if(res ~ "[+]") {
     if(index(res, "+") > 0) {
